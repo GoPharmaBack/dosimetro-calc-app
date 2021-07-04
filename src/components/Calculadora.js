@@ -53,12 +53,12 @@ function Calculadora() {
       <br/>
       <form>
         <div className="grupo-form">
-          <label htmlFor=""> Altura: </label>
+          <label > Altura: </label>
           <input type="text" id="altura" placeholder="Ingresa la altura" />
         </div>
         <br />
         <div className="grupo-form">
-          <label htmlFor=""> Peso: </label>
+          <label > Peso: </label>
           <input type="text" id="peso" placeholder="Ingresa el peso" />
         </div>
         <hr />
