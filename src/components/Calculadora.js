@@ -49,17 +49,19 @@ function Calculadora() {
     setCurrentViales(0)
   };
   return (
-    <div className="calculadora">
+    <section className="calculadora">
       <br/>
       <form>
-        <div className="grupo-form">
+        <div className="datos-formm">
           <label > Altura: </label>
           <input type="text" id="altura" placeholder="Ingresa la altura" />
+           cm
         </div>
         <br />
-        <div className="grupo-form">
+        <div className="datos-formm">
           <label > Peso: </label>
           <input type="text" id="peso" placeholder="Ingresa el peso" />
+           kg
         </div>
         <hr />
 
@@ -77,7 +79,7 @@ function Calculadora() {
         <label>Viales </label>
         <input type="text" className="result" value={currentViales} readOnly />
       </form>
-    </div>
+    </section>
   )
 }
 
