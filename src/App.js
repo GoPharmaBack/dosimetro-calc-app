@@ -50,9 +50,8 @@ function App() {
           </section>
           <small><strong>Referencias:</strong></small>
           <small
-            >Dubois D., Dubois E.F.:A formula to estimate yhe aproximate surface
-            area if height and weight be known. Arch Intern Med 1916;
-            17:863-71.</small
+            >
+            Dubois D, Dubois EF. A formula to estimate the approximate surface area if height and weight be known. Arch Intern Med. 1916; 17:863-871.</small
           >
           <small
             >Wang Y., Moss, J, Thisted R. Predictors of Body Surface Area. J

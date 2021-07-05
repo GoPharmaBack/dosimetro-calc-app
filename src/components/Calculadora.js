@@ -24,16 +24,16 @@ function Calculadora() {
     let alturaParcial = Math.pow(currentAltura, 0.725);
     let pesoParcial = Math.pow(currentPeso, 0.425);
 
-    let superficie = Math.round(alturaParcial * pesoParcial * decimal) / 100;
-    setCurrentBsa(superficie);
+    let superficie = (alturaParcial * pesoParcial * decimal) / 100;
+    setCurrentBsa(superficie.toFixed(4));
     console.log(superficie)
 
     var dosis = parseFloat(superficie * 1.4);
-    setCurrentDosis(dosis.toFixed(2))
+        setCurrentDosis(dosis.toFixed(4))
 
-    console.log(dosis.toFixed(2));
+    console.log(dosis.toFixed(4));
     let viales = (dosis * 2 / 1);
-    setCurrentViales(viales.toFixed(2))
+    setCurrentViales(viales.toFixed(4))
 
   };
   console.log(currentPeso);
