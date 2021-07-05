@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dosimetro-calc-app/static/css/main.13323a8f.chunk.css",
-    "main.js": "/dosimetro-calc-app/static/js/main.c32c6b40.chunk.js",
-    "main.js.map": "/dosimetro-calc-app/static/js/main.c32c6b40.chunk.js.map",
+    "main.js": "/dosimetro-calc-app/static/js/main.eab381b5.chunk.js",
+    "main.js.map": "/dosimetro-calc-app/static/js/main.eab381b5.chunk.js.map",
     "runtime-main.js": "/dosimetro-calc-app/static/js/runtime-main.388612a5.js",
     "runtime-main.js.map": "/dosimetro-calc-app/static/js/runtime-main.388612a5.js.map",
     "static/js/2.ec8f0511.chunk.js": "/dosimetro-calc-app/static/js/2.ec8f0511.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.388612a5.js",
     "static/js/2.ec8f0511.chunk.js",
     "static/css/main.13323a8f.chunk.css",
-    "static/js/main.c32c6b40.chunk.js"
+    "static/js/main.eab381b5.chunk.js"
   ]
 }
