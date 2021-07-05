@@ -53,7 +53,8 @@ function Calculadora() {
 
       <form>
       <div className="contenedor-form">
-      <div className="datos-usuario">
+     <div className="bloque-rosa">
+     <div className="datos-usuario">
           <div className="group-usuario">
             <label > Altura: </label>
             <div><input type="text" id="altura" placeholder="Ingresa la altura" />
@@ -73,9 +74,11 @@ function Calculadora() {
 
           <button onClick={Clear}>Borrar datos</button>
         </div>
+     </div>
 
 
-        <div className="datos-bsa">
+       <div className="bloque-azul">
+       <div className="datos-bsa">
           <label> BSA (Superficie Corporal): </label>
          <div> <input type="text" className="result" value={currentBsa} readOnly />
           <p>m<sup>2</sup></p></div>
@@ -86,7 +89,7 @@ function Calculadora() {
         <div className="datos-viales">
         <div className="caja-azul">
         <div className="grupo-viales">
-        <label>Dosis </label>
+        <label>Dosis: </label>
           <div><input type="text" className="result" value={currentDosis} readOnly />
           mg</div>
         </div>
@@ -96,6 +99,7 @@ function Calculadora() {
          </div>
         </div>
         </div>
+       </div>
      
         </div>
          </form>
