@@ -1,7 +1,7 @@
 {
   "name": "dosimetro-calc-app",
   "version": "0.1.0",
-  "homepage": "https://gopharma-devs.github.io/dosimetro-calc-app/",
+  "homepage": "./",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
