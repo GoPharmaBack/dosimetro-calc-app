@@ -30,12 +30,14 @@ header {
   h1 {
     margin-left: 9%;
     color: grey;
-@include tablet{
-  margin-left: 10px;
-  font-size: 2rem;
-}
+
+    @include tablet {
+      margin-left: 10px;
+      font-size: 2rem;
+    }
+
     @include phone {
-      margin-left:0 ;
+      margin-left: 0;
       margin-bottom: 0;
       font-size: 1.4rem;
     }
@@ -45,8 +47,9 @@ header {
 
     }
   }
-  @include phone{
-  
+
+  @include phone {
+
     min-height: 150px;
     margin-bottom: 5px;
     background-image: url('../assets/img/header-img-r.png');
@@ -102,14 +105,17 @@ header {
         " bsa  viales viales";
       justify-content: center;
       align-items: center;
-@include phone{
-display: flex;
-flex-flow: column;
-}
+
+      @include phone {
+        display: flex;
+        flex-flow: column;
+      }
+
       .datos-usuario {
         padding: 1rem;
         grid-area: usuario;
-        @include phone{
+
+        @include phone {
           padding: 0 1rem;
         }
 
@@ -119,7 +125,8 @@ flex-flow: column;
           align-items: flex-start;
           display: flex;
           flex-flow: row;
-margin: 0.5rem;
+          margin: 0.5rem;
+
           input {
             min-width: 220px
           }
@@ -136,9 +143,17 @@ margin: 0.5rem;
               font-size: 1rem;
             }
           }
-@include phone{
-  width: auto;
-}
+
+          @include phone {
+            flex-flow: column;
+            width: auto;
+            align-items: center;
+            justify-content: center;
+
+            label {
+              font-size: 1.2rem;
+            }
+          }
         }
 
       }
@@ -150,7 +165,8 @@ margin: 0.5rem;
         flex-flow: column;
         padding: 1rem;
         align-items: center;
-        @include phone{
+
+        @include phone {
           padding: 0 1rem;
         }
       }
@@ -162,9 +178,14 @@ margin: 0.5rem;
         width: 100%;
         border: none;
         border: 0.5rem solid #455ba8;
+
         input {
           margin-left: 10px;
           max-width: 90px;
+          @include tablet{
+            width: 100%;
+            max-width: 100%;
+          }
         }
 
       }
@@ -178,16 +199,30 @@ margin: 0.5rem;
 
         align-items: center;
         justify-content: center;
-        @include phone{padding-top: 1rem;}
+
+        div {
+          display: flex;
+        }
+
+        @include tablet{
+          flex-flow: column;
+          width: 100%;
+          padding-top: 1rem;
+
+          label {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+          }
+        }
 
       }
 
 
 
       .datos-viales {
-      
+
         grid-area: viales;
-width: 100%;
+        width: 100%;
         height: 100%;
         background-color: #455ba8;
         display: flex;
@@ -207,23 +242,46 @@ width: 100%;
           color: #455ba8;
           align-items: center;
           justify-content: center;
-          @include tablet{
+
+          @include tablet {
             flex-flow: column;
             align-items: center;
             justify-content: center;
-           
+            max-width: 100%;
             margin: auto;
           }
-          @include phone{
-            width: auto;
-          }
+
 
           .grupo-viales {
             display: flex;
             width: 100%;
             align-items: center;
             justify-content: center;
-            input{margin-top: 0.3rem;;}
+
+            input {
+              margin-top: 0.3rem;
+            }
+
+            div {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+
+            }
+
+            @include tablet {
+              input {
+                width: 100%;
+                max-width: auto !important;
+              }
+
+              flex-flow: column;
+
+              label {
+                font-weight: 400 !important;
+              }
+            }
           }
         }
       }

@@ -77,8 +77,8 @@ function Calculadora() {
 
         <div className="datos-bsa">
           <label> BSA (Superficie Corporal): </label>
-          <input type="text" className="result" value={currentBsa} readOnly />
-          <p>m<sup>2</sup></p>
+         <div> <input type="text" className="result" value={currentBsa} readOnly />
+          <p>m<sup>2</sup></p></div>
         </div>
 
        
