@@ -10,7 +10,12 @@ body {
   color: #000000;
 }
 
-p {margin-bottom: 0.3rem;}
+p {margin-bottom: 0.3rem;
+@include phone{
+  text-align: justify;
+  font-size: 14px;
+}
+}
 
 h1, h2, h3, h4, h5 {
   margin: 3rem 0 1.38rem;
@@ -41,6 +46,9 @@ h5 {font-size: 1.333rem;}
 small, .text_small {font-size: 0.75rem;}
 
 label{ font-weight: lighter !important;
+  font-size: 1rem;
+  @include tablet {font-size:1.2rem};
+  @include phone{font-size: 0.9rem;}
 }
 
 input{
