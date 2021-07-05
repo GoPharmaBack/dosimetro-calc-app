@@ -33,7 +33,7 @@ function Calculadora() {
 
     console.log(dosis.toFixed(2));
     let viales = (dosis * 2 / 1);
-    setCurrentViales(viales)
+    setCurrentViales(viales.toFixed(2))
 
   };
   console.log(currentPeso);
@@ -52,57 +52,57 @@ function Calculadora() {
     <section className="calculadora">
 
       <form>
-      <div className="contenedor-form">
-     <div className="bloque-rosa">
-     <div className="datos-usuario">
-          <div className="group-usuario">
-            <label > Altura: </label>
-            <div><input type="text" id="altura" placeholder="Ingresa la altura" />
-            <p>cm</p></div>
+        <div className="contenedor-form">
+          <div className="bloque-rosa">
+            <div className="datos-usuario">
+              <div className="group-usuario">
+                <label > Altura: </label>
+                <div><input type="text" id="altura" placeholder="Ingresa la altura" />
+                  <p>cm</p></div>
+              </div>
+
+              <div className="group-usuario">
+                <label > Peso: </label>
+                <div><input type="text" id="peso" placeholder="Ingresa el peso" />
+                  <p> kg</p></div>
+              </div>
+            </div>
+
+            <div className="botones-form">
+
+              <button onClick={Formula}><strong>Calcular dosis</strong></button>
+
+              <button onClick={Clear}>Borrar datos</button>
+            </div>
           </div>
 
-          <div className="group-usuario">
-            <label > Peso: </label>
-            <div><input type="text" id="peso" placeholder="Ingresa el peso" />
-           <p> kg</p></div>
+
+          <div className="bloque-azul">
+            <div className="datos-bsa">
+              <label> BSA (Superficie Corporal): </label>
+              <div> <input type="text" className="result" value={currentBsa} readOnly />
+                <p>m<sup>2</sup></p></div>
+            </div>
+
+
+
+            <div className="datos-viales">
+              <div className="caja-azul">
+                <div className="grupo-viales">
+                  <label>Dosis: </label>
+                  <div><input type="text" className="result" value={currentDosis} readOnly />
+                    mg</div>
+                </div>
+                <div className="grupo-viales">
+                  <label>No. de viales: </label>
+                  <input type="text" className="result" value={currentViales} readOnly />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div className="botones-form">
-
-          <button onClick={Formula}><strong>Calcular dosis</strong></button>
-
-          <button onClick={Clear}>Borrar datos</button>
         </div>
-     </div>
-
-
-       <div className="bloque-azul">
-       <div className="datos-bsa">
-          <label> BSA (Superficie Corporal): </label>
-         <div> <input type="text" className="result" value={currentBsa} readOnly />
-          <p>m<sup>2</sup></p></div>
-        </div>
-
-       
-
-        <div className="datos-viales">
-        <div className="caja-azul">
-        <div className="grupo-viales">
-        <label>Dosis: </label>
-          <div><input type="text" className="result" value={currentDosis} readOnly />
-          mg</div>
-        </div>
-         <div className="grupo-viales">
-         <label>No. de viales: </label>
-          <input type="text" className="result" value={currentViales} readOnly />
-         </div>
-        </div>
-        </div>
-       </div>
-     
-        </div>
-         </form>
+      </form>
     </section>
   )
 }
