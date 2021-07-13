@@ -33,7 +33,10 @@ function Calculadora() {
 
     console.log(dosis.toFixed(4));
     let viales = (dosis * 2 / 1);
-    setCurrentViales(viales.toFixed(4))
+    let vialesAjustados = (dosis *1/1)
+    setCurrentViales(vialesAjustados.toFixed(4))
+
+
 
   };
   console.log(currentPeso);
@@ -94,8 +97,12 @@ function Calculadora() {
                     mg</div>
                 </div>
                 <div className="grupo-viales">
-                  <label>No. de viales: </label>
+                  <div className="titulo-viales">
+                  <span>No. de viales</span>
+                  <label>por aplicación:</label>
+                  </div>
                   <input type="text" className="result" value={currentViales} readOnly />
+                  
                 </div>
               </div>
             </div>

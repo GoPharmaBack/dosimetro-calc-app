@@ -176,6 +176,16 @@ height: auto;
               align-items: center;
               justify-content: center;
             }
+            .titulo-viales{
+              transform:translateY(-5px);
+              align-items: center;
+              justify-content: center;
+              text-align: left;
+              margin-bottom: 5px;
+              display: flex;
+              flex-flow: column;
+              line-height:1;
+            }
           }
           @include phone{
             flex-flow: column;
@@ -203,7 +213,7 @@ height: auto;
 
   .informacion {
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     font-weight: lighter;
     display: flex;
     flex-flow: column;
@@ -242,7 +252,7 @@ height: auto;
     font-weight: lighter;
     width: 100%;
     background-color: white;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     align-items: flex-start;
     flex-flow: column;
@@ -318,4 +328,14 @@ br {
 
 .menos {
   max-width: 100px;
+}
+
+.frase{
+  margin-bottom: 1rem;
+}
+
+.legales{
+  margin-top: 1rem;
+  text-align:justify;
+  font-weight: lighter;
 }
