@@ -26,6 +26,7 @@ function App() {
               supuesto, se encontrarán ligeras diferencias en las cifras si se
               comparan ambos, pero en general, escasamente significativas. La
               valoración es también similar:
+              
             </p>
             <section className="tabla">
               <table>
