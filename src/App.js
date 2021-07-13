@@ -57,16 +57,18 @@ function App() {
                 </tbody>
               </table>
             </section>
-            <p className="frase">
+            <div className="frase">
+            <p >
               <strong>
-                La dosís recomendada de Halaven<sup>®</sup> es 1.4 mg/m<sup>2</sup>{" "}
+                La dosis recomendada de Halaven<sup>®</sup> es 1.4 mg/m<sup>2</sup>{" "}
               </strong>
-              debe ser administrada por vía intravenosa durante 2 a 5 minutos
-              los días 1 y 8 de cada ciclo de 21 días
+               debe ser administrada por vía intravenosa durante 2 a 5 minutos los días 1 y 8 de cada ciclo de 21 días.
+            
             </p>
+            
+            </div>
            
-            <br />
-            <small>.</small>
+           
             <small>
               <strong>Referencias:</strong>
             </small>
@@ -79,7 +81,7 @@ function App() {
               Wang Y., Moss, J, Thisted R. Predictors of Body Surface Area. J
               Clin Anesth 1992; 4(1): 4-10.
             </small>
-            <small>Halaven-IPPA-193300423M0029-02dic2019</small>
+            <small>Halaven-IPPA-193300423M0029-02dic2019.</small>
           </div>
           <div className="formulas">
             <p className="titulo">fórmulas</p>
@@ -107,18 +109,9 @@ function App() {
           <img src={LogoHalven} alt="logo-halaven" />
         </section>
         <div className="color"></div>
-       
-        <small className="legales">
-          Toda la información contenida y generada por el sistema de Eisai
-          Laboratorios, S. de R.L. de C.V. se ofrece únicamente para fines
-          educativos. Esta información no debe emplearse para el diagnóstico o
-          tratamiento de ninguna enfermedad o problema de salud.{" "}
-          <strong>
-            EL PROPÓSITO DE ESTA INFORMACIÓN NO ES SUSTITUIR EL CRITERIO CLÍNICO
-            NI ORIENTAR SOBRE EL TRATAMIENTO DE PACIENTES INDIVIDUALES DE NINGÚN
-            MODO.
-          </strong>
-        </small>
+       <small  className="legales" >Toda la información contenida y generada por el sistema de Eisai Laboratorios S. de R.L. de C.V. se ofrece únicamente para fines educativos.</small>
+      <small className="legales">Esta información no debe emplearse para el diagnóstico o tratamiento de ninguna enfermedad o problema de salud.</small>
+      <small className="legales"><strong>EL PROPÓSITO DE ESTA INFORMACIÓN NO ES SUSTITUIR EL CRITERIO CLÍNICO NI ORIENTAR SOBRE EL TRATAMIENTO DE PACIENTES INDIVIDUALES DE NINGÚN MODO.</strong></small>
       </div>
     </div>
   );

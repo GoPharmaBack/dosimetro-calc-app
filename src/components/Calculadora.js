@@ -32,7 +32,7 @@ function Calculadora() {
         setCurrentDosis(dosis.toFixed(4))
 
     console.log(dosis.toFixed(4));
-    let viales = (dosis * 2 / 1);
+  
     let vialesAjustados = (dosis *1/1)
     setCurrentViales(vialesAjustados.toFixed(4))
 

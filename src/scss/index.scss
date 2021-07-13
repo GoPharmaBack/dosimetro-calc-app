@@ -170,16 +170,16 @@ height: auto;
             @include phone{
               flex-flow: column;
             }
-            div {
+            .grupo-viales {
               margin:0.4rem;
               display: flex;
               align-items: center;
               justify-content: center;
+             
             }
             .titulo-viales{
-              transform:translateY(-5px);
-              align-items: center;
-              justify-content: center;
+              transform:translateY(2px);  
+              justify-content:flex-start;
               text-align: left;
               margin-bottom: 5px;
               display: flex;
@@ -221,6 +221,7 @@ height: auto;
     border-radius: 8px;
 
     .tabla {
+      margin-top: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -330,12 +331,16 @@ br {
   max-width: 100px;
 }
 
-.frase{
-  margin-bottom: 1rem;
+.frase p {
+  
+  margin:16px 0 !important;
 }
 
 .legales{
-  margin-top: 1rem;
+  &:nth-of-type(1){
+    margin-top: 1rem;
+  }
+  
   text-align:justify;
   font-weight: lighter;
 }
