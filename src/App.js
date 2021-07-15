@@ -74,15 +74,15 @@ function App() {
               <strong>Referencias:</strong>
             </small>
             <small>
-            <sup>1</sup> Dubois D, Dubois EF. A formula to estimate the approximate surface
+            1.- Dubois D, Dubois EF. A formula to estimate the approximate surface
               area if height and weight be known. Arch Intern Med. 1916;
               17:863-871.
             </small>
             <small>
-            <sup>2</sup> Wang Y., Moss, J, Thisted R. Predictors of Body Surface Area. J
+            2.- Wang Y., Moss, J, Thisted R. Predictors of Body Surface Area. J
               Clin Anesth 1992; 4(1): 4-10.
             </small>
-            <small><sup>3</sup>Halaven-IPPA-193300423M0029-02dic2019.</small>
+            <small>3.- Halaven-IPPA-193300423M0029-02dic2019.</small>
           </div>
           <div className="formulas">
             <p className="titulo">fórmulas</p>
