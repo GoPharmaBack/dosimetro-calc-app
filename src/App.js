@@ -19,13 +19,13 @@ function App() {
             <p className="titulo">Información</p>
             <p className="parrafo">
               Esta calculadora está basada en la fórmula clásica de DuBois y
-              DuBois.
+              DuBois. <sup>1</sup>
             </p>
             <p>
               Se ha intentado que los cálculos sean lo más exactos posibles. Por
               supuesto, se encontrarán ligeras diferencias en las cifras si se
               comparan ambos, pero en general, escasamente significativas. La
-              valoración es también similar:
+              valoración es también similar: <sup>2</sup>
               
             </p>
             <section className="tabla">
@@ -63,7 +63,7 @@ function App() {
               <strong>
                 La dosis recomendada de Halaven<sup>®</sup> es 1.4 mg/m<sup>2</sup>{" "}
               </strong>
-               debe ser administrada por vía intravenosa durante 2 a 5 minutos los días 1 y 8 de cada ciclo de 21 días.
+               debe ser administrada por vía intravenosa durante 2 a 5 minutos los días 1 y 8 de cada ciclo de 21 días.<sup>3</sup>
             
             </p>
             
@@ -74,28 +74,28 @@ function App() {
               <strong>Referencias:</strong>
             </small>
             <small>
-              Dubois D, Dubois EF. A formula to estimate the approximate surface
+            <sup>1</sup> Dubois D, Dubois EF. A formula to estimate the approximate surface
               area if height and weight be known. Arch Intern Med. 1916;
               17:863-871.
             </small>
             <small>
-              Wang Y., Moss, J, Thisted R. Predictors of Body Surface Area. J
+            <sup>2</sup> Wang Y., Moss, J, Thisted R. Predictors of Body Surface Area. J
               Clin Anesth 1992; 4(1): 4-10.
             </small>
-            <small>Halaven-IPPA-193300423M0029-02dic2019.</small>
+            <small><sup>3</sup>Halaven-IPPA-193300423M0029-02dic2019.</small>
           </div>
           <div className="formulas">
             <p className="titulo">fórmulas</p>
             <div className="contenedor-formulas">
               <div className="formula">
-                <p>Fórmula de DuBois y DuBois:</p>
+                <p>Fórmula de DuBois y DuBois: <sup>1</sup></p>
                 <strong>
                   BSA = 0.007184 x Peso <sup>0.425</sup> x altura{" "}
-                  <sup>0.725</sup>
+                  <sup>0.725</sup> 
                 </strong>
               </div>
               <div className="formula">
-                <p>Fórmula para determinar dosis:</p>
+                <p>Fórmula para determinar dosis: <sup>2</sup></p>
                 <strong>
                   {" "}
                   Dosis = 1.4 mg/m<sup>2</sup>{" "}
