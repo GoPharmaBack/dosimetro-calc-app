@@ -110,6 +110,7 @@ function App() {
           <img src={LogoHalven} alt="logo-halaven" />
         </section>
         <div className="color"></div>
+        <small className="crc"><span>CRC:</span> LEN728-21. <span>No. Cofepris:</span> XXXXXXXXX.</small>
        <small  className="legales" >Toda la información contenida y generada por el sistema de Eisai Laboratorios S. de R.L. de C.V. se ofrece únicamente para fines educativos.</small>
       <small className="legales">Esta información no debe emplearse para el diagnóstico o tratamiento de ninguna enfermedad o problema de salud.</small>
       <small className="legales"><strong>EL PROPÓSITO DE ESTA INFORMACIÓN NO ES SUSTITUIR EL CRITERIO CLÍNICO NI ORIENTAR SOBRE EL TRATAMIENTO DE PACIENTES INDIVIDUALES DE NINGÚN MODO.</strong></small>
