@@ -113,7 +113,7 @@ function App() {
         </section>
         <div className="color"></div>
         <small className="crc">
-          <span>CRC:</span> LEN728-21. <span>No. Cofepris:</span>{" "}
+          <span>CRC:</span> LEN728-21. <span>Aviso Cofepris No.</span>{" "}
           213300202C8894/213300202C8897.
         </small>
         <small className="legales">
