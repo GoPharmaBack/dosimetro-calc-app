@@ -1,51 +1,51 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
-function Calculadora () {
-  const [clear, setClear] = useState(false)
-  const [currentAltura, setCurrentAltura] = useState(0)
-  const [currentPeso, setCurrentPeso] = useState(0)
-  const [currentBsa, setCurrentBsa] = useState(0)
-  const [currentDosis, setCurrentDosis] = useState(0)
-  const [currentViales, setCurrentViales] = useState(0)
+function Calculadora() {
+  const [clear, setClear] = useState(false);
+  const [currentAltura, setCurrentAltura] = useState(0);
+  const [currentPeso, setCurrentPeso] = useState(0);
+  const [currentBsa, setCurrentBsa] = useState(0);
+  const [currentDosis, setCurrentDosis] = useState(0);
+  const [currentViales, setCurrentViales] = useState(0);
 
   useEffect(() => {
-    document.querySelector('.result').value = '0'
-  }, [])
+    document.querySelector('.result').value = '0';
+  }, []);
 
   const Formula = (e) => {
-    e.preventDefault()
-    if (clear) setClear(false)
-    const currentAltura = document.querySelector('#altura').value
-    const currentPeso = document.querySelector('#peso').value
-    const ajusteDosis = document.querySelector('#dosis').value
-    const decimal = 0.7184
-    const alturaParcial = Math.pow(currentAltura, 0.725)
-    const pesoParcial = Math.pow(currentPeso, 0.425)
+    e.preventDefault();
+    if (clear) setClear(false);
+    const currentAltura = document.querySelector('#altura').value;
+    const currentPeso = document.querySelector('#peso').value;
+    const ajusteDosis = document.querySelector('#dosis').value;
+    const decimal = 0.7184;
+    const alturaParcial = Math.pow(currentAltura, 0.725);
+    const pesoParcial = Math.pow(currentPeso, 0.425);
 
-    const superficie = (alturaParcial * pesoParcial * decimal) / 100
-    setCurrentBsa(superficie.toFixed(4))
-    console.log(superficie)
+    const superficie = (alturaParcial * pesoParcial * decimal) / 100;
+    setCurrentBsa(superficie.toFixed(4));
+    console.log(superficie);
 
-    const dosis = parseFloat(superficie * ajusteDosis)
-    setCurrentDosis(dosis.toFixed(4))
+    const dosis = parseFloat(superficie * ajusteDosis);
+    setCurrentDosis(dosis.toFixed(4));
 
-    console.log(dosis.toFixed(4))
+    console.log(dosis.toFixed(4));
 
-    const vialesAjustados = (dosis * 1) / 1
-    setCurrentViales(vialesAjustados.toFixed(4))
-  }
-  console.log(currentPeso)
-  console.log(currentAltura)
+    const vialesAjustados = (dosis * 1) / 1;
+    setCurrentViales(vialesAjustados.toFixed(4));
+  };
+  console.log(currentPeso);
+  console.log(currentAltura);
 
   const Clear = (e) => {
-    e.preventDefault()
-    document.querySelector('form').reset()
-    setClear(true)
-    setCurrentAltura(0)
-    setCurrentPeso(0)
-    setCurrentDosis(0)
-    setCurrentViales(0)
-  }
+    e.preventDefault();
+    document.querySelector('form').reset();
+    setClear(true);
+    setCurrentAltura(0);
+    setCurrentPeso(0);
+    setCurrentDosis(0);
+    setCurrentViales(0);
+  };
   return (
     <>
       <section className='calculadora'>
@@ -90,13 +90,18 @@ function Calculadora () {
                   <strong>Calcular dosis</strong>
                 </button>
 
-                <button onClick={Clear}>Borrar datos</button>
+                <button className='outline' onClick={Clear}>
+                  Borrar datos
+                </button>
               </div>
             </div>
 
             <div className='bloque-azul'>
               <div className='datos-bsa'>
-                <label> <strong>BSA</strong> (Superficie Corporal): </label>
+                <label>
+                  {' '}
+                  <strong>BSA</strong> (Superficie Corporal):{' '}
+                </label>
                 <div>
                   {' '}
                   <input
@@ -235,7 +240,7 @@ function Calculadora () {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Calculadora
+export default Calculadora;

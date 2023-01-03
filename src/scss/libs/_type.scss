@@ -68,9 +68,15 @@ button{
   border-radius: 8px;
   width: 100%;
   max-width: 220px;
+  font-weight: lighter !important;
   margin:auto 0.5rem 0.5rem auto;
   @include phone{
     margin: 0.5rem auto;
+  }
+  &:hover{
+    
+    cursor: pointer;
+    background-color: #c7007f;
   }
 }
 

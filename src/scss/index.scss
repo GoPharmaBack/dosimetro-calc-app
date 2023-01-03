@@ -110,16 +110,17 @@ header {
           flex: 1;
           justify-content: space-evenly;
           align-items: center;
-
           .group-usuario {
             display: flex;
-          padding: 0.7rem;  
+            padding: 0.7rem;
             width: 100%;
+      
             justify-content: space-between;
             align-items: center;
             label {
               font-weight: normal !important;
               color: #3b3b3bc9;
+              min-width: 45px;
             }
             div {
               p {
@@ -137,6 +138,16 @@ header {
               display: flex;
             }
           }
+        }
+      }
+      .outline {
+        border: 1px solid #ae006e;
+        background-color: transparent;
+        color: #ae006e;
+        cursor: pointer;
+        &:hover {
+          background-color: #ae006e;
+          color: white;
         }
       }
       .bloque-azul {
@@ -359,13 +370,12 @@ br {
 .group-usuario-ajuste {
   display: flex;
   flex-flow: column;
-label{
-  font-weight: bolder !important;
-  color: #455ba8;
-  margin: 0.5rem 0;
-}
-#dosis{
-  margin: 0 0.5rem 1rem;
+  label {
+    font-weight: bolder !important;
+    color: #455ba8;
+    margin: 0 0 0.5rem 0;
+  }
+  #dosis {
     width: 100%;
     max-width: 220px;
     border: none;
@@ -373,5 +383,5 @@ label{
     padding: 0.5rem;
     background-color: white;
     border-radius: 5px;
-}
+  }
 }
