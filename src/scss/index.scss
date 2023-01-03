@@ -1,5 +1,5 @@
-@import "./libs/mixins";
-@import "./libs/type";
+@import './libs/mixins';
+@import './libs/type';
 
 * {
   padding: 0;
@@ -14,7 +14,7 @@ body {
 header {
   width: 100%;
   max-width: 100vw;
-height: auto;
+  height: auto;
   min-height: 42vh;
   margin-bottom: 2rem;
   background-color: rgb(182, 182, 182);
@@ -22,7 +22,7 @@ height: auto;
   align-items: flex-end;
   justify-content: flex-start;
   padding: 1rem;
-  background-image: url("../assets/img/header-img.png");
+  background-image: url('../assets/img/header-img.png');
   background-size: cover;
   background-position: right;
 
@@ -49,7 +49,7 @@ height: auto;
   @include phone {
     min-height: 150px;
     margin-bottom: 5px;
-    background-image: url("../assets/img/header-img-r.png");
+    background-image: url('../assets/img/header-img-r.png');
   }
 }
 
@@ -74,7 +74,7 @@ height: auto;
     height: auto;
     border-radius: 8px 8px 0px 0px;
     background-color: #eacbdb;
-    
+
     input {
       width: 120px;
       margin: 5px;
@@ -90,7 +90,6 @@ height: auto;
     }
 
     .contenedor-form {
-      
       width: 100%;
       height: auto;
       display: flex;
@@ -101,7 +100,7 @@ height: auto;
         justify-content: space-evenly;
         align-items: center;
         flex-flow: row;
-        @include phone{
+        @include phone {
           flex-flow: column;
         }
         .botones-form,
@@ -109,25 +108,31 @@ height: auto;
           display: flex;
           flex-flow: column;
           flex: 1;
+          justify-content: space-evenly;
+          align-items: center;
+
           .group-usuario {
             display: flex;
-            margin-bottom: 1rem;
+          padding: 0.7rem;  
             width: 100%;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            label{
-              font-weight: 400;
-              color: #3b3b3b;}
+            label {
+              font-weight: normal !important;
+              color: #3b3b3bc9;
+            }
             div {
-              
-              p{color: #ae006e;}
-              input{margin: 0 0.5rem;
-                &::placeholder{
+              p {
+                color: #ae006e;
+              }
+              input {
+                margin: 0 0.5rem;
+                &::placeholder {
                   color: #ae006e;
                 }
-              width: 100%;
-            max-width: 220px;
-            }
+                width: 100%;
+                max-width: 205px;
+              }
               width: 100%;
               display: flex;
             }
@@ -139,7 +144,7 @@ height: auto;
         background-color: #455ba8;
         display: flex;
         color: white;
-        @include phone{
+        @include phone {
           flex-flow: column;
         }
         .datos-bsa {
@@ -147,13 +152,15 @@ height: auto;
           flex: 1;
           align-items: center;
           justify-content: center;
-          
+
           div {
             display: flex;
           }
-          @include phone{
+          @include phone {
             margin-bottom: 1rem;
-            label{font-size: 0.8rem;}
+            label {
+              font-size: 0.8rem;
+            }
           }
         }
         .datos-viales {
@@ -161,33 +168,32 @@ height: auto;
           flex: 1;
           .caja-azul {
             font-weight: bold;
-            color:#455ba8;
-            border-radius: 16px;
-           background-color: #d3d5eb;
+            color: #455ba8;
+            border-radius: 6px;
+            background-color: #d3d5eb;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            @include phone{
+            @include phone {
               flex-flow: column;
             }
             .grupo-viales {
-              margin:0.4rem;
+              margin: 0.5rem;
               display: flex;
               align-items: center;
               justify-content: center;
-             
             }
-            .titulo-viales{
-              transform:translateY(2px);  
-              justify-content:flex-start;
+            .titulo-viales {
+              transform: translateY(2px);
+              justify-content: flex-start;
               text-align: left;
               margin-bottom: 5px;
               display: flex;
               flex-flow: column;
-              line-height:1;
+              line-height: 1;
             }
           }
-          @include phone{
+          @include phone {
             flex-flow: column;
           }
         }
@@ -332,19 +338,39 @@ br {
 }
 
 .frase p {
-  
-  margin:16px 0 !important;
+  margin: 16px 0 !important;
 }
 
-.legales{
-  &:nth-of-type(1){
+.legales {
+  &:nth-of-type(1) {
     margin-top: 1rem;
   }
-  
-  text-align:justify;
+
+  text-align: justify;
   font-weight: lighter;
 }
-.crc{
+.crc {
   margin-top: 0.5rem;
-  span{font-weight: lighter !important;}
+  span {
+    font-weight: lighter !important;
+  }
+}
+
+.group-usuario-ajuste {
+  display: flex;
+  flex-flow: column;
+label{
+  font-weight: bolder !important;
+  color: #455ba8;
+  margin: 0.5rem 0;
+}
+#dosis{
+  margin: 0 0.5rem 1rem;
+    width: 100%;
+    max-width: 220px;
+    border: none;
+   
+    padding: 0.5rem;
+    border-radius: 5px;
+}
 }
