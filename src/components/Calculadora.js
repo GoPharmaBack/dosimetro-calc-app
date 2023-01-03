@@ -24,7 +24,7 @@ function Calculadora () {
 
     const superficie = (alturaParcial * pesoParcial * decimal) / 100
     setCurrentBsa(superficie.toFixed(4))
-    console.log(superficie)
+    // console.log(superficie)
 
     const dosis = parseFloat(superficie * ajusteDosis)
     setCurrentDosis(dosis.toFixed(4))
@@ -34,10 +34,10 @@ function Calculadora () {
     const vialesAjustados = (dosis * 1) / 1
     setCurrentViales(vialesAjustados.toFixed(4))
   }
-  console.log(currentPeso)
-  console.log(currentAltura)
 
   const Clear = (e) => {
+    console.log(currentPeso)
+    console.log(currentAltura)
     e.preventDefault()
     document.querySelector('form').reset()
     setClear(true)
@@ -57,7 +57,9 @@ function Calculadora () {
                   <label> Altura: </label>
                   <div>
                     <input
-                      type='text'
+                      type='number'
+                      min='0'
+                      max='300'
                       id='altura'
                       placeholder='Ingresa la altura'
                     />
@@ -69,7 +71,9 @@ function Calculadora () {
                   <label> Peso: </label>
                   <div>
                     <input
-                      type='text'
+                      type='number'
+                      min='0'
+                      max='200'
                       id='peso'
                       placeholder='Ingresa el peso'
                     />
