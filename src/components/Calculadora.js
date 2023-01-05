@@ -45,6 +45,7 @@ function Calculadora () {
     setCurrentPeso(0)
     setCurrentDosis(0)
     setCurrentViales(0)
+    setCurrentBsa(0)
   }
   return (
     <>
